@@ -24,3 +24,19 @@ header p {
     font-style: italic;
     color: blue;
 }
+footer { 
+    background-color: blueviolet;
+    border: black solid thin;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+header {
+    background-color: black;
+    color: white;
+}
+main{
+    background-color: darkgoldenrod;
+}
+figure.left {
+    float: left;
+}
