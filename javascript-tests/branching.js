@@ -1,18 +1,18 @@
-let height = 5;
+let height =25;
 
-if (height >= 5) {
+if (height >= 25) {
     console.log('We have a big one');
 }
 
  height = 3;
-    if (height >= 5) {
+    if (height >= 25) {
         console.log('We have a big one');
     } 
     else {
         console.log('We have a little one');
     }
     height = 6;
-    if (height >= 5) {
+    if (height >= 25) {
         console.log('We have a big one');
     } else if (height >= 0) {
         console.log('We have a little one');
@@ -38,8 +38,8 @@ if (height >= 5) {
         const simpleBranchDisplay = document.getElementById('simpleBranchDisplay');
         
         simpleBranchAction.onclick = (event) => {
-            let height = 4;
-            if (height >= 5) {
+            let height = 24;
+            if (height >= 25) {
                 simpleBranchDisplay.textContent = 'We have a big one';
             } else {
                 simpleBranchDisplay.textContent = 'We have a little one';
