@@ -1,8 +1,20 @@
+windows.onload = () => {
+
+    const simpleObjectDisplay = document.getElementById('simpleObjectDisplay');
+    const simpleObjectAction = document.getElementById('simpleObjectAction')
+    //simpleObjectDisplay.textContent = 'foo';
+
+    simpleObjectAction.onclick = simpleObject.sayName();
+
+
 const simpleObject = {
-    sayName: function() {
-        console.log("Simple Object");
-    }
+firstName: 'James',
+lastName: 'Watson',
+sayName: function() {
+    console.log(this.firstName + "" + this.lastName);
+}
 };
+
 
 simpleObject.dynamicMethod = () => {
     console.log('Dynamic Method');
@@ -28,3 +40,4 @@ functionObject.sayName();
 
 const customClass = new CustomClass();
 customClass.sayName();
+}
