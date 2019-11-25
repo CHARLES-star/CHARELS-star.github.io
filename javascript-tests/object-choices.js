@@ -4,40 +4,41 @@ windows.onload = () => {
     const simpleObjectAction = document.getElementById('simpleObjectAction')
     //simpleObjectDisplay.textContent = 'foo';
 
+
+
+
+    const simpleObject = {
+        firstName: 'James',
+        lastName: 'Watson',
+        sayName: function () {
+            console.log(this.firstName + "" + this.lastName);
+        }
+    };
+
     simpleObjectAction.onclick = simpleObject.sayName();
 
+    simpleObject.dynamicMethod = () => {
+        console.log('Dynamic Method');
+    };
 
-const simpleObject = {
-firstName: 'James',
-lastName: 'Watson',
-sayName: function() {
-    console.log(this.firstName + "" + this.lastName);
-}
-};
-
-
-simpleObject.dynamicMethod = () => {
-    console.log('Dynamic Method');
-};
-
-function FunctionObject() {
-    FunctionObject.prototype.sayName = function() {
-        console.log('Function Object');
+    function FunctionObject() {
+        FunctionObject.prototype.sayName = function () {
+            console.log('Function Object');
+        }
     }
-}
-class CustomClass {
-    sayName() {
-        console.log("Custom Class")
+    class CustomClass {
+        sayName() {
+            console.log("Custom Class")
+        }
     }
-}
 
 
-simpleObject.sayName();
-simpleObject.dynamicMethod();
+    simpleObject.sayName();
+    simpleObject.dynamicMethod();
 
-const functionObject = new FunctionObject();
-functionObject.sayName();
+    const functionObject = new FunctionObject();
+    functionObject.sayName();
 
-const customClass = new CustomClass();
-customClass.sayName();
+    const customClass = new CustomClass();
+    customClass.sayName();
 }
