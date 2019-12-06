@@ -1,4 +1,4 @@
-windows.onload = () => {
+window.onload = function () {
 
     const simpleObjectDisplay = document.getElementById('simpleObjectDisplay');
     const simpleObjectAction = document.getElementById('simpleObjectAction')

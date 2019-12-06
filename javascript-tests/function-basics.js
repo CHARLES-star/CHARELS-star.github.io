@@ -5,5 +5,5 @@ window.onload = () => {
         console.log('simple');
         simpleFunctionDisplay.textContent = "simple";
     }
-    functionCallsAction.onclick = simple;   
+    functionCallAction.onclick = simple;   
 }
